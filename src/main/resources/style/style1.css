@@ -1,0 +1,103 @@
+/* Définir des couleurs et des polices globales */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #f0f0f0;
+    -fx-background-color: #FFFFFF;
+}
+
+/* Style du VBox pour les éléments de l'interface */
+.vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #4CAF50; /* couleur de fond */
+    -fx-text-fill: white; /* couleur du texte */
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* couleur au survol */
+}
+
+/* TableView - ajout de styles */
+.table-view {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-selection-bar: #8A8A8A;
+}
+
+/* Style des colonnes de TableView */
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-size: 12px;
+}
+
+/* Style des TextField */
+.text-field {
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-padding: 8px;
+}
+
+/* Style des TabPane et Tabs */
+.tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 180px;
+    -fx-background-color: #f4f4f4;
+}
+
+.tab {
+    -fx-background-color: #E0E0E0;
+    -fx-font-weight: bold;
+}
+
+/* Style des HBox (alignement des boutons) */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Style pour les Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Style des titres de colonnes */
+.table-column-header {
+    -fx-background-color: #E0E0E0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Style de la ligne de TableView sélectionnée */
+.table-view .selected {
+    -fx-background-color: #e1f5fe;
+}
+
+/* Style des TableCells */
+.table-cell {
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+}
+
+/* Couleur de fond pour les boutons d'action dans chaque section */
+.button-action {
+    -fx-background-color: #2d87f0;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+.button-action:hover {
+    -fx-background-color: #2577d7;
+}

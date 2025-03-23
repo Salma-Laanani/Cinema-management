@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.appjava.controller.SeanceController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox spacing="10" style="-fx-padding: 10;">
+        <!-- Liste des séances du film sélectionné -->
+        <TableView fx:id="seanceTable">
+            <columns>
+                <TableColumn fx:id="filmColumn" text="Film" />
+                <TableColumn fx:id="dateColumn" text="dateHeure" />
+                <TableColumn fx:id="placesColumn" text="PlacesDisponibles" />
+            </columns>
+        </TableView>
+
+        <!-- Réservation -->
+        <HBox spacing="10" alignment="CENTER">
+
+            <Button text="Réserver" onAction="#onReserver" />
+        </HBox>
+    </VBox>
+
+</AnchorPane>

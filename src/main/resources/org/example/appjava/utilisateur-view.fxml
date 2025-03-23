@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.appjava.controller.UtilisateurController"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+
+
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <!-- Liste des séances de tous les films -->
+            <TableView fx:id="utilisateurTable">
+                <columns>
+                    <TableColumn fx:id="nomColumn" text="utilisateur" />
+                    <TableColumn fx:id="prenomColumn" text="seance" />
+                    <TableColumn fx:id="emailColumn" text="nombrebillets" />
+                </columns>
+            </TableView>
+
+        </VBox>
+
+
+
+
+
+</AnchorPane>

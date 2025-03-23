@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.appjava.controller.FilmController"
+
+            prefHeight="400.0" prefWidth="600.0">
+
+
+<children>
+
+<VBox spacing="10" style="-fx-padding: 10;">
+ <TabPane>
+     <tabs>
+         <Tab text="Film"  >
+             <VBox spacing="10" style="-fx-padding: 10;" >
+                 <TextField fx:id="searchField" promptText="Rechercher par titre ou genre" onKeyReleased="#onFiltrer" />
+                 <TableView fx:id="FilmTable" onMouseClicked="#onFilmSelected">
+                     <columns>
+                         <TableColumn fx:id="titlecolumn" text="Titre"  prefWidth="150" />
+                         <TableColumn fx:id="genrecolumn" text="Genre" />
+                         <TableColumn fx:id="dureecolumn" text="Duree" />
+                         <TableColumn fx:id="desccolumn" text="Description" />
+                         <TableColumn fx:id="imagecolumn" text="Image" />
+                     </columns>
+                 </TableView>
+                 <HBox spacing="10" alignment="CENTER">
+                     <Button fx:id="adminbutton" text="Ajouter" onAction="#onAddFilm" ></Button>
+                     <Button fx:id="adminbutton2" text="Modifier" onAction="#onEditFilm" ></Button>
+                     <Button fx:id="adminbutton3" text="Supprimer" onAction="#onDeleteFilm" ></Button>
+
+                 </HBox>
+
+             </VBox>
+
+
+         </Tab>
+         <Tab text="seance" fx:id="seanceTab">
+             <VBox spacing="10" style="-fx-padding: 10;">
+                 <!-- Liste des séances de tous les films -->
+                 <TableView fx:id="seanceTable">
+                     <columns>
+                         <TableColumn fx:id="filmColumn" text="film" />
+                         <TableColumn fx:id="dateColumn" text="dateHeure" />
+                         <TableColumn fx:id="placesColumn" text="placesDisponibles" />
+                     </columns>
+                 </TableView>
+                 <HBox spacing="10" alignment="CENTER">
+
+                 <Button text="Réserver"  />
+                 </HBox>
+
+             </VBox>
+         </Tab>
+         <Tab text="reservation" fx:id="reservationTab">
+             <VBox spacing="10" style="-fx-padding: 10;">
+             <!-- Liste des séances de tous les films -->
+             <TableView fx:id="reservationTable">
+                 <columns>
+                     <TableColumn fx:id="utilisateurColumn" text="utilisateur" />
+                     <TableColumn fx:id="seanceColumn" text="seance" />
+                     <TableColumn fx:id="nombrebilletColumn" text="nombrebillets" />
+                 </columns>
+             </TableView>
+
+
+
+             </VBox>
+         </Tab>
+         <Tab fx:id="usertab" text="utilisateur"   >
+             <VBox spacing="10" style="-fx-padding: 10;">
+             <!-- Liste des séances de tous les films -->
+             <TableView fx:id="utilisateurTable">
+                 <columns>
+                     <TableColumn fx:id="nomColumn" text="utilisateur" />
+                     <TableColumn fx:id="prenomColumn" text="prenom" />
+                     <TableColumn fx:id="emailColumn" text="email" />
+                 </columns>
+             </TableView>
+                 <HBox spacing="10" alignment="CENTER">
+                     <Button text="Ajouter" onAction="#onAddUser"></Button>
+                     <Button text="Modifier" onAction="#onEditUser"></Button>
+                     <Button text="Supprimer" onAction="#onDeleteUser"></Button>
+
+                 </HBox>
+
+             </VBox>
+
+
+         </Tab>
+     </tabs>
+ </TabPane>
+</VBox>
+</children>
+        </AnchorPane>

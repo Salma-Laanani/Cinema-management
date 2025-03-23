@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.appjava.controller.ConnecterController"
+            prefHeight="400.0" prefWidth="600.0"> <!-- Taille identique à UserView -->
+
+    <children>
+        <!-- VBox principale pour centrer le contenu -->
+        <VBox spacing="20" alignment="CENTER"
+              AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+
+            <!-- VBox pour le formulaire de connexion -->
+            <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20; -fx-border-color: #cccccc; -fx-border-radius: 5; -fx-border-width: 1;">
+                <!-- Champ Email -->
+                <TextField fx:id="nom"  promptText="nom" prefWidth="100" />
+
+                <TextField fx:id="prenom"  promptText="Prenom" prefWidth="100" />
+
+                <TextField fx:id="emailField" promptText="Email" prefWidth="100" />
+
+                <!-- Champ Mot de passe -->
+                <PasswordField fx:id="passwordField" promptText="Mot de passe"  prefWidth="400"/>
+
+                <!-- ComboBox pour le rôle -->
+                <ComboBox fx:id="roleComboBox" promptText="Choisir un rôle" prefWidth="400" />
+
+                <!-- Bouton de connexion -->
+                <Button text="Se connecter" onAction="#handleLogin" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" prefWidth="400" />
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>

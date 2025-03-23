@@ -1,0 +1,33 @@
+/* Style pour les petits champs de saisie */
+.small-text-field {
+    -fx-pref-width: 200px; /* Largeur réduite */
+    -fx-padding: 5px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #ccc;
+    -fx-font-size: 12px;
+}
+
+/* Style pour la petite ComboBox */
+.small-combo-box {
+    -fx-pref-width: 200px; /* Largeur réduite */
+    -fx-padding: 5px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #ccc;
+    -fx-font-size: 12px;
+}
+
+/* Style pour les petits boutons d'action */
+.small-button-action {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-pref-width: 200px; /* Largeur réduite */
+    -fx-font-size: 12px;
+}
+
+.small-button-action:hover {
+    -fx-background-color: #45a049;
+}
